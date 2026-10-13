@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thy Thy Magazine</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Tangerine:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="book" class="book">
+
+  <!-- Top bar: title + page indicator + close-to-cover -->
+  <header class="book-topbar">
+    <button class="topbar-btn" id="toContents" title="Table of Contents">☰</button>
+    <div class="topbar-title" id="topbarTitle">Scrapbook</div>
+    <div class="topbar-page" id="pageIndicator">1 / 1</div>
+  </header>
+
+  <!-- Pages get injected here by script.js -->
+  <main class="pages" id="pages"></main>
+
+  <!-- Nav arrows -->
+  <button class="nav-arrow nav-prev" id="prevBtn" aria-label="Previous page">&#10094;</button>
+  <button class="nav-arrow nav-next" id="nextBtn" aria-label="Next page">&#10095;</button>
+
+  <!-- Dots -->
+  <nav class="dots" id="dots"></nav>
+</div>
+
+<!-- Lightbox for photo album -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#10094;</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+  <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next photo">&#10095;</button>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
